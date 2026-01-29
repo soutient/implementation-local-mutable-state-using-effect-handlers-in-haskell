@@ -1,0 +1,67 @@
+cabal-version: 2.2
+
+-- This file has been generated from package.yaml by hpack version 0.38.0.
+--
+-- see: https://github.com/sol/hpack
+
+name:           UsingTheFreeMonadStyle
+version:        0.1.0.0
+description:    Please see the README on GitHub at <https://github.com/soutient/UsingTheFreeMonadStyle#readme>
+homepage:       https://github.com/soutient/implementation-local-mutable-state-using-effect-handlers-in-haskell#readme
+bug-reports:    https://github.com/soutient/implementation-local-mutable-state-using-effect-handlers-in-haskell/issues
+author:         Alexis Soutient
+maintainer:     retablies@hotmail.com
+copyright:      2026 Alexis Soutient
+license:        BSD-3-Clause
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
+    CHANGELOG.md
+
+source-repository head
+  type: git
+  location: https://github.com/soutient/UsingTheFreeMonadStyle
+
+library
+  exposed-modules:
+      Lib
+  other-modules:
+      Paths_UsingTheFreeMonadStyle
+  autogen-modules:
+      Paths_UsingTheFreeMonadStyle
+  hs-source-dirs:
+      src
+  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints
+  build-depends:
+      base >=4.7 && <5
+  default-language: Haskell2010
+
+executable UsingTheFreeMonadStyle-exe
+  main-is: Main.hs
+  other-modules:
+      Paths_UsingTheFreeMonadStyle
+  autogen-modules:
+      Paths_UsingTheFreeMonadStyle
+  hs-source-dirs:
+      app
+  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      UsingTheFreeMonadStyle
+    , base >=4.7 && <5
+  default-language: Haskell2010
+
+test-suite UsingTheFreeMonadStyle-test
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  other-modules:
+      Paths_UsingTheFreeMonadStyle
+  autogen-modules:
+      Paths_UsingTheFreeMonadStyle
+  hs-source-dirs:
+      test
+  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      UsingTheFreeMonadStyle
+    , base >=4.7 && <5
+  default-language: Haskell2010
